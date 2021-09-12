@@ -6,12 +6,12 @@ class UploadeCSV{
 
     private $file;
 
-    function __construct($file)
+    public function __construct($file)
     {
         $this->file = $file;
     }
 
-    function getCsv()
+    public function getCsv()
     {
         $handle = fopen($this->file, "r");
         $res = [];

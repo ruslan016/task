@@ -7,12 +7,12 @@ class Ipstack
 
     private $ip;
 
-    function __construct($ip)
+    public function __construct($ip)
     {
         $this->ip = $ip;
     }
 
-    function getContinent()
+    public function getContinent()
     {
         $access_key = '8f32a01998e7ae1d174e952801ef0d08';
 

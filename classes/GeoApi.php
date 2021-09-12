@@ -5,7 +5,7 @@ namespace classes;
 class GeoApi
 {
 
-    public $data;
+    private $data;
 
     public function __construct($data)
     {

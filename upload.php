@@ -42,12 +42,10 @@ foreach ($csv as $item) {
             $ipCheckRes = $ipCheck->getContinent();
 
             $phone = $result['phone'];
-            //echo $phone."<br>";
 
             $continent = new GeoApi($phone);
             $cont = $continent->getContinent();
            
-
             if ($ipCheckRes == $cont) {
                 $countSameContinent++;
                 $sumDurSameContinent += $result['duration'];
